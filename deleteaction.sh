@@ -9,7 +9,7 @@ fi
 
 echo -e "user $INPUT_USER \"$INPUT_PASSWORD\"" >> rmcmd
 echo -e "cd \"$INPUT_WORKINGDIR\"" >> rmcmd
-echo -e "rm -r *" >> rmcmd
+echo -e "rm -rf *" >> rmcmd
 echo -e "quit;\n" >> rmcmd
 
 lftp  ftp://$INPUT_HOST < rmcmd
