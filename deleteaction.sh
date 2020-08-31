@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 echo "" > rmcmd
+
 if [ "$INPUT_IGNORESSL" -eq "1" ]
 then
     echo -e "set ftp:ssl-allow no;" >> rmcmd
