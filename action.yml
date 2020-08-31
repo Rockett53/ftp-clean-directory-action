@@ -1,6 +1,6 @@
-name: 'ftp-delete-action'
-author: 'Stephan Thierry <stephan@protek.dk>'
-description: 'Automate deleting files via FTP using this GitHub action.'
+name: 'ftp-clean-directory-action'
+author: 'Alexandre CHAUDET <alexandre@rockett.fr>'
+description: 'Automate deleting all the contents of a directory via FTP using this GitHub action.'
 inputs:
   host:
     description: 'FTP host'
@@ -11,10 +11,6 @@ inputs:
   password:
     description: 'FTP password'
     required: true
-  remoteFiles:
-    description: 'Remote files seperated by ; (wildcards accepted)'
-    required: true
-    default: ''
   workingDir:
     description: 'Working directory'
     required: false
