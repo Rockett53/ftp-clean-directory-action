@@ -21,7 +21,7 @@ jobs:
 #   ... INSTALL / RESTORE / BUILD ...  
 
     - name: Clean FTP Directory
-      uses: Rockett53/ftp-clean-directory-action@releases/v3
+      uses: Rockett53/ftp-clean-directory-action@releases/v5
       with:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
